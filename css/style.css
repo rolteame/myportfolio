@@ -98,6 +98,7 @@ html {
 }
 .profile-intro h1 {
     font-size: 60px;
+    font-family: 'roboto' sans-serif;
 }
 .profile-intro h3 {
     font-size: 40px;
@@ -106,7 +107,8 @@ html {
 
 
 .about {
-    background: var(--about-bg-color); 
+    background: var(--about-bg-color);
+    height: 100vh; 
 }
 .about-heading {
     text-decoration: underline;
