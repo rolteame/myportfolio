@@ -26,8 +26,7 @@ html {
     background: var(--nav-bg-color);
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    
+    width: 100%;
 }
 .logo {
     color: var(--text-color);
@@ -81,7 +80,7 @@ html {
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
-        max-width: 100%;
+        width: 100%;
     }
     .nav-links {
         list-style-type: none;
@@ -94,7 +93,7 @@ html {
     background: #171c20;
     background-size: cover;
     opacity: 0.9;
-    max-width: 100%;
+    width: 100%;
     color: var(--text-color);
     display: grid;
     grid-template-rows: repeat(1, 1fr);
