@@ -98,7 +98,7 @@ html {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     place-items: center;
-    height: 100vh;
+    height: 700px;
     text-align: center;
 }
 .learn-about {
@@ -151,7 +151,7 @@ html {
 
 .about {
     background: var(--about-bg-color);
-    height: 100vh; 
+    height: 700px; 
 }
 .about-heading {
     
@@ -242,7 +242,7 @@ html {
 /*contact section*/
 .contact-section {
     background: #000d1a;
-    height: 100vh;
+    height: 700px;
     color: var(--text-color);
 }
 .contact-heading {
