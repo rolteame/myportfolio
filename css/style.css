@@ -28,6 +28,16 @@ html {
     justify-content: space-between;
     width: 100%;
 }
+.back-up {
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    background: #d4cbcb;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+}
 .logo {
     color: var(--text-color);
     width: 70px;
@@ -87,6 +97,12 @@ html {
         display: flex;
         flex-direction: column;
     }
+    .nav-links > li a {
+        text-align: center;
+    }
+    .back-up {
+        display: none;
+    }
 }
 /*profile intro section*/
 .profile-intro {
@@ -99,7 +115,7 @@ html {
     grid-template-rows: repeat(1, 1fr);
     place-items: center;
     height: 700px;
-    text-align: center;
+    
 }
 .learn-about {
     padding: 0.6em;
@@ -129,10 +145,10 @@ html {
 }
 @media (max-width: 425px) {
     .profile-intro h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
     .profile-intro h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
     .learn-about {
         padding: 0.3em;
@@ -151,7 +167,7 @@ html {
 
 .about {
     background: var(--about-bg-color);
-    height: 700px; 
+    height: 100vh; 
 }
 .about-heading {
     
@@ -207,6 +223,10 @@ html {
     justify-content: space-between;
 }
 @media (max-width: 425px) {
+    .about {
+        height: auto;
+        padding: 5% 0; 
+    }
     .profile-img {
         width: 100px;
         height: 100px;
@@ -242,13 +262,14 @@ html {
 /*contact section*/
 .contact-section {
     background: #000d1a;
-    height: 700px;
+    height: 100vh;
     color: var(--text-color);
+    padding: 8%;
 }
 .contact-heading {
-    padding-top: 30px;
+    padding-bottom: 2em;
     text-align: center;
-    font-size: 20px;
+    font-size: 34px;
     font-family: 'roboto', sans-serif;
 }
 .contact-wrapper {
@@ -275,6 +296,10 @@ html {
     display: block;
     font-size: 22px;
 }
+textarea {
+    width: 300px;
+    height: 100px;
+}
 .form div input[type="text"], .form div .email {
     width: 300px;
     padding: 10px;
@@ -294,7 +319,7 @@ html {
 }
 @media (max-width: 425px) {
     .contact-section {
-        height: 100vh;
+        height: auto;
         width: 100%;
     }
     .contact-heading {
@@ -348,7 +373,7 @@ html {
     padding: 10%;
     width: 70%;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 #email {
@@ -358,7 +383,16 @@ html {
     padding: 5px;
 }
 @media (max-width: 425px) {
-    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .author > p {
+        font-size: 20px;
+        width: 100%;
+    }
 }
 
 
