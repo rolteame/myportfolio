@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="index">
     <!--Header and Navigation-->
     <header class="header">
         <a href=""><img class="logo" src="./images/logo.png" alt=""></a>
@@ -16,11 +16,13 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="">Projects</a></li>
-                <a href=""><button class="btn-contact">Contact</button></a>
-            </ul>       
+                <li><a href="#">Projects</a></li>
+                <a href="#contact"><button class="btn-contact">Contact</button></a>
+            </ul> 
+                  
         </nav>
     </header>
+    <a href="#index"><img class="back-up" src="https://img.icons8.com/dotty/80/000000/send-letter.png"/></a>
     <!--Main body container-->
     <main>
         <section class="profile-intro">
@@ -43,14 +45,15 @@
                     </div>
                     <div class="about-skill">
                         <h2>Skills</h2>
-                        <p><span>HTML</span><span>80%</span></p>
-                        <p><span>CSS</span><span>60%</span></p>
-                        <p><span>Javascripts</span><span>20%</span></p>
+                        <p><span>HTML</span><span>Git</span></p>
+                        <p><span>CSS</span><span>Github</span></p>
+                        <p><span>Javascripts</span><span>Canva</span></p>
+                        <p><span>Netlify</span><span>Vercel</span></p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h2 class="contact-heading">Contact Me</h2>
             <div class="contact-wrapper"> 
                 <div class="contact-links">
@@ -63,15 +66,15 @@
                     <form class="form" action="POST" data-netlify="true">
                         <div>
                             <label class="message" for="name">Name:</label>
-                            <input type="text" id="name">
+                            <input type="text" id="name" required>
                         </div>
                         <div>
                             <label class="message" for="email">Email:</label>
-                            <input type="email" class="email">
+                            <input type="email" class="email" required>
                         </div>
                         <div>
                             <label class="message" for="message">Message:</label>
-                            <textarea rows="10" cols="42"></textarea>
+                            <textarea required></textarea>
                         </div>
                         <div>
                             <input type="submit" value="Submit" class="submit">
@@ -90,7 +93,7 @@
             <div class="contact">
                 <p>Register for my Newsletter</p>
                 <form action="POST" data-netlify="true">
-                    <input type="email" name="email" id="email" placeholder="Enter your Email Address">
+                    <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
                     <input type="submit" value="Submit" id="submit">
                 </form>
 
