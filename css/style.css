@@ -15,18 +15,23 @@
     --slideTextColor: #272838;
     --initialBgColor: #272838;
     --slideBgColor: #FFF;
-
+    --bg-projects: #afaf8c;
 }
 /*implementing smooth scroll*/
 html {
     scroll-behavior: smooth;
+    max-width: 1140px;
+    margin: 0 auto;
+    background: darkgray;
 }
+
 /*Header and Navigation*/
 .header {
     background: var(--nav-bg-color);
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: sticky;
 }
 .back-up {
     position: fixed;
@@ -56,7 +61,7 @@ html {
     padding: 1em;
     margin: 0.2em;
     margin-left: 0.3;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .nav-links li:hover {
     border: 1px solid var(--text-color);
@@ -96,6 +101,7 @@ html {
         list-style-type: none;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .nav-links > li a {
         text-align: center;
@@ -114,8 +120,7 @@ html {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     place-items: center;
-    height: 600px;
-    
+    height: 700px;
 }
 .learn-about {
     padding: 0.6em;
@@ -158,6 +163,21 @@ html {
         text-align: center;
     }
 }
+@media (max-width: 768px) {
+    .profile-intro h1 {
+        font-size: 25px;
+    }
+    .profile-intro h3 {
+        font-size: 20px;
+    }
+    .learn-about {
+        padding: 0.3em;
+        margin-top: 5px;
+    }
+    .profile-intro {
+        text-align: center;
+    }
+}
 
 /*About section*/
 
@@ -170,14 +190,14 @@ html {
 
 .about {
     background: var(--about-bg-color);
-    height: 100vh; 
+    height: auto; 
 }
 .about-heading {
     
     font-size: 34px;
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 1%;
     font-family: 'roboto', sans-serif;
 }
 .about-wrapper {
@@ -188,7 +208,7 @@ html {
 .about-section {
     display: flex;
     flex-flow: column nowrap;
-    padding: 5%;
+    padding: 10%;
     justify-items: space-between;
 }
 .about-text {
@@ -233,7 +253,8 @@ html {
     .profile-img {
         width: 100px;
         height: 100px;
-        border: 4px solid #fff; 
+        border: 4px solid #fff;
+        border-radius: 10px; 
     }
     .about-heading {
         font-size: 34px;
@@ -261,16 +282,103 @@ html {
         text-align: center;
     } 
 }
-
+@media (max-width: 768px) {
+    .about-wrapper {
+        padding: 0 ;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .about {
+        height: auto;
+        padding: 5% 0; 
+    }
+}
+/*Projects section*/
+.projects-section {
+    background: var(--bg-projects);
+    height: 40rem;
+}
+.projects-section h2 {
+    text-align: center;
+    padding: 3%;
+    font-size: 34px;
+}
+.projects-wrapper {
+    padding: 4%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.projects-preview {
+    width: 300px;
+    border-top-left-radius: 30px;
+   
+}
+.projects-card {
+    width: 300px;
+    height: 300px;
+    background: #aa959593;
+    box-shadow: #00080f;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card-text {
+    text-align: justify;
+    padding: 10%;
+}
+.projects-visit {
+    margin-top: 0.2rem;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    float: right;
+    border: none;
+}
+.projects-visit:hover {
+    background: #272838;
+    color: #fff;
+    border: none;
+}
+@media (max-width: 425px) {
+    .projects-section h2 {
+        text-align: center;
+        padding: 3%;
+        font-size: 34px;
+    }
+    .projects-section {
+        height: auto;
+    }
+    .projects-wrapper {
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-card {
+        margin-bottom: 5%;
+    }
+}
+@media(max-width: 768px) {
+    .projects-section {
+        height: auto;
+    }
+    .projects-wrapper {
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-card {
+        margin-bottom: 5%;
+    }
+}
 /*contact section*/
 .contact-section {
     background: #000d1a;
-    height: 100vh;
     color: var(--text-color);
-    padding: 8%;
+    padding: 5%;
 }
 .contact-heading {
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
     text-align: center;
     font-size: 34px;
     font-family: 'roboto', sans-serif;
