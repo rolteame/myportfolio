@@ -28,10 +28,11 @@ html {
 /*Header and Navigation*/
 .header {
     background: var(--nav-bg-color);
+    border-bottom: 1px solid #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: sticky;
+    position: fixed;
 }
 .back-up {
     position: fixed;
@@ -96,6 +97,7 @@ html {
         flex-flow: column;
         justify-content: space-evenly;
         width: 100%;
+        position: static;
     }
     .nav-links {
         list-style-type: none;
@@ -114,183 +116,200 @@ html {
 .profile-intro {
     background: #171c20;
     background-size: cover;
-    opacity: 0.9;
     width: 100%;
+    height: 100vh;
     color: var(--text-color);
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    place-items: center;
-    height: 700px;
+    padding-top: 2rem;
 }
-.learn-about {
-    padding: 0.6em;
-    color: var(--text-color);
-    font-size: larger;
-    background: transparent;
-    background-image: linear-gradient(90deg,
-        var(--initialBgColor) 0%,
-        var(--initialBgColor) 50%,
-        var(--slideBgColor) 50%,
-        var(--slideBgColor) 100%);
-    background-size: 400%;
-    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),color .2s linear;
-    transition-delay: 0.0s, 0.15s;
-    border: 1px solid var(--text-color);
-}
-.learn-about:hover {
-    color: var(--nav-bg-color);
-    background-position: -50% 100%;
-}
-.profile-intro h1 {
-    font-size: 60px;
-    font-family: 'roboto' sans-serif;
-}
-.profile-intro h3 {
-    font-size: 40px;
-}
-@media (max-width: 425px) {
-    .profile-intro h1 {
-        font-size: 25px;
-    }
-    .profile-intro h3 {
-        font-size: 20px;
-    }
-    .learn-about {
-        padding: 0.3em;
-        margin-top: 5px;
-    }
-    .profile-intro {
-        text-align: center;
-    }
-}
-@media (max-width: 768px) {
-    .profile-intro h1 {
-        font-size: 25px;
-    }
-    .profile-intro h3 {
-        font-size: 20px;
-    }
-    .learn-about {
-        padding: 0.3em;
-        margin-top: 5px;
-    }
-    .profile-intro {
-        text-align: center;
-    }
-}
-
-/*About section*/
-
-.profile-img {
-    margin-top: 2em;
-    width: 300px;
-    height: 300px;
-    border: 4px solid #fff; 
-}
-
-.about {
-    background: var(--about-bg-color);
-    height: auto; 
-}
-.about-heading {
-    
-    font-size: 34px;
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 1%;
-    font-family: 'roboto', sans-serif;
-}
-.about-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    place-items: center;
-}
-.about-section {
+.intro-header {
     display: flex;
     flex-flow: column nowrap;
-    padding: 10%;
-    justify-items: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
-.about-text {
-    font-size: 18px;
+.profile-img {
+    margin-top: 2em;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #fff;
+    border-radius: 50%; 
+}
+.profile-intro h1 {
+    font-size: 30px;
+}
+.profile-intro h3 {
+    font-size: 20px;
+}
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+.info {
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+.info-card {
     background: #fff;
-    padding: 1em;
-    text-align: justify;
+    color: var(--nav-bg-color);
+    width: 60%;
+    padding: 2.5rem;
     border-radius: 20px;
-    margin-bottom: 20px;
+    height: 15rem;
 }
-.btn-resume {
-    padding: 10px;
-    font-size: 14px;
-    margin-top: 5px;
-    float: right;
-    border: 2px solid var(--nav-bg-color);
-    background-color: transparent;
-    
+.info-card ul {
+    list-style-type: square;
 }
-.btn-resume:hover {
-    background-color: var(--nav-bg-color);
-    border: 2px solid;
-    border-color: #fff;
-    color: #fff;
+.info-card ul li {
+    padding: 0.2rem;
 }
-.about-skill {
-    font-size: 18px;
-    background: #fff;
-    padding: 1em;
-    text-align: justify;
-    border-radius: 20px;
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.about-skill p {
+.skills p {
     display: flex;
     justify-content: space-between;
 }
 @media (max-width: 425px) {
-    .about {
+    .profile-intro {
         height: auto;
-        padding: 5% 0; 
     }
-    .profile-img {
-        width: 100px;
-        height: 100px;
-        border: 4px solid #fff;
-        border-radius: 10px; 
+    .profile-intro h1 {
+        font-size: 25px;
     }
-    .about-heading {
-        font-size: 34px;
+    .profile-intro h3 {
+        font-size: 20px;
+    }
+    .profile-intro {
         text-align: center;
-        padding-top: 5%;
-        padding-bottom: 1%;
-        font-family: 'roboto', sans-serif;
     }
-    .about-wrapper {
-        padding: 0 ;
-        display: flex;
-        flex-flow: column nowrap;
+    .info {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 20px;
     }
-    .about-text {
-        font-size: 14px;
+    .info-card {
+        width: 100%;
     }
-    .btn-resume {
-        padding: 5px;
+    .info-card ul li {
+        font-size: 1rem;
     }
-    .about-skill {
-        font-size: 14px;
-    }
-    .about-skill h2 {
-        font-size: 18px;
-        text-align: center;
-    } 
 }
 @media (max-width: 768px) {
-    .about-wrapper {
-        padding: 0 ;
+    .profile-intro h1 {
+        font-size: 25px;
+    }
+    .profile-intro h3 {
+        font-size: 20px;
+    }
+    .profile-intro {
+        text-align: center;
+    }
+    .info {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 20px;
+    }
+    .profile-intro {
+        height: auto;
+    }
+}
+
+/*About section*/
+.about {
+    background: var(--nav-bg-color);
+    height: 100vh; 
+    color: var(--text-color);
+}
+.about-heading {
+    font-size: 34px;
+    text-align: center;
+    padding-top: 5%;
+}
+.about-section {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.about-text {
+    font-size: 1rem;
+    padding: 1% 0;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.btn-resume {
+    width: 10%;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+.about-testimony {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+    padding: 3%;
+}
+.about-testimony h2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    padding-bottom: 3%;
+}
+.testimony-img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    align-self: center;
+    margin-top: -60px;
+}
+.testimony-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 70%;
+    text-align: justify;
+    background: #fff;
+    padding: 5%;
+    margin-top: 2rem;
+    border: 1px solid var(--nav-bg-color);
+    border-radius: 20px;
+    color: var(--nav-bg-color);
+}
+@media(max-width: 425px) {
+    .about {
+        height: auto; 
+    }
+    .about-section {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 2%;
+    }
+    .btn-resume {
+        width: 50%;
+        margin: 2%;
+    }
+    .about-testimony {
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
     }
-    .about {
-        height: auto;
-        padding: 5% 0; 
+    .testimony-img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border: 1px solid #fff;
+        margin-top: 0;
     }
 }
 /*Projects section*/
@@ -381,7 +400,6 @@ html {
     padding-bottom: 2rem;
     text-align: center;
     font-size: 34px;
-    font-family: 'roboto', sans-serif;
 }
 .contact-wrapper {
     padding: 3%;
@@ -437,7 +455,6 @@ textarea {
         padding-top: 20px;
         text-align: center;
         font-size: 26px;
-        font-family: 'roboto', sans-serif;
     }
     .contact-links{
         padding: 1em;
