@@ -196,6 +196,7 @@ hr {
     }
     .info-card {
         width: 100%;
+        height: auto;
     }
     .info-card ul li {
         font-size: 1rem;
@@ -257,7 +258,7 @@ hr {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     place-items: center;
-    padding: 3%;
+    
 }
 .about-testimony h2 {
     grid-row: 1 / 2;
@@ -268,7 +269,7 @@ hr {
     display: block;
     width: 80px;
     height: 80px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 50%;
     align-self: center;
     margin-top: -60px;
@@ -285,6 +286,9 @@ hr {
     border: 1px solid var(--nav-bg-color);
     border-radius: 20px;
     color: var(--nav-bg-color);
+}
+.testimony-card h3, .testimony-card h5 {
+    text-align: center;
 }
 @media(max-width: 425px) {
     .about {
@@ -303,6 +307,13 @@ hr {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
+    }
+    .about-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .testimony-card {
+        height: auto;
     }
     .testimony-img {
         display: block;
