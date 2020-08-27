@@ -62,7 +62,7 @@ html {
     padding: 1em;
     margin: 0.2em;
     margin-left: 0.3;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease-in 0s;
 }
 .nav-links li:hover {
     border: 1px solid var(--text-color);
@@ -239,13 +239,17 @@ hr {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(1, 1fr);
-    
+}
+.about-section h2 {
+    padding: 2%;
+    text-align: center;
 }
 .about-text {
     font-size: 1rem;
     padding: 1% 0;
     max-width: 1140px;
     margin: 0 auto;
+    text-align: center;
 }
 .btn-resume {
     width: 10%;
@@ -307,6 +311,39 @@ hr {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
+    }
+    .about-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .testimony-card {
+        height: auto;
+    }
+    .testimony-img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border: 1px solid #fff;
+        margin-top: 0;
+    }
+}
+@media(min-width:426px) and (max-width: 768px) {
+    .about {
+        height: auto; 
+    }
+    .about-section {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 2%;
+    }
+    .btn-resume {
+        width: 50%;
+        margin: 2%;
+    }
+    .about-testimony {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .about-text {
         text-align: center;
