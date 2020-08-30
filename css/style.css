@@ -288,10 +288,10 @@ hr {
         height: auto;
     }
     .profile-intro h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
     .profile-intro h3 {
-        font-size: 20px;
+        font-size: 0.8rem;
     }
     .profile-intro {
         text-align: center;
@@ -311,7 +311,7 @@ hr {
         font-size: 1rem;
     }
 }
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .profile-intro h1 {
         font-size: 25px;
     }
@@ -344,9 +344,11 @@ hr {
 .moments h2 {
     text-align: center;
     padding: 2%;
+    font-size: 30px;
 }
 .moments p {
     text-align: center;
+    font-size: 1rem;
 }
 .picture-grid {
     display: grid;
@@ -601,18 +603,24 @@ hr {
 .card-text {
     text-align: justify;
     padding: 10%;
+    height: auto;
+    margin: 0 auto;
 }
 .projects-visit {
-    width: 100px;
+    width: 200px;
     padding: 10px;
     margin-top: 5px;
     transition: all 1s ease 0s;
+    margin-right: 10px;
+    margin-left: 20px;
+    justify-content: center;
 }
 .projects-visit:hover {
     background-color: var(--nav-bg-color);
     border: 2px solid;
     border-color: #fff;
     color: #fff;
+    width: 200px;
 }
 @media (max-width: 425px) {
     .projects-section h2 {
@@ -631,6 +639,18 @@ hr {
     }
     .projects-card {
         margin-bottom: 5%;
+        width: 200px;
+    }
+    .projects-preview {
+        width: 200px;
+    }
+    .projects-visit {
+        text-align: center;
+        margin: 0 auto;
+        width: 100px;
+    }
+    .card-text {
+        margin: 0 auto;
     }
 }
 @media(max-width: 768px) {
@@ -645,6 +665,15 @@ hr {
     }
     .projects-card {
         margin-bottom: 5%;
+    }
+    .card-text {
+        text-align: justify;
+        padding: 5%;
+        margin: 0 auto;
+    }
+    .projects-visit {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 /*contact section*/
@@ -740,10 +769,11 @@ textarea {
         padding-top: 2px;
     }
     .form div input[type="text"], .form div .email {
-        width: 300px;
-        padding: 8px;
+        width: 200px;
+        padding: 5px;
     }
     textarea {
+        width: 200px;
         height: 100px;
     }
 }
@@ -802,6 +832,11 @@ textarea {
     height: 50px;
     border-radius: 50%;
     border: 1px solid var(--text-color);
+}
+@media(max-width: 425px) and (max-width: 768px){
+    .back-up {
+        display: none;
+    }
 }
 
 
