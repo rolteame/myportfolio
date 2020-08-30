@@ -419,9 +419,10 @@ hr {
 /*About section*/
 .about {
     background: #171c20;
-    height: 100%; 
+    height: auto; 
     color: var(--text-color);
     transition: all ease-in 0.5s;
+    padding: 2%;
 }
 .about-heading {
     font-size: 34px;
@@ -481,7 +482,7 @@ hr {
     width: 70%;
     text-align: justify;
     background: #fff;
-    padding: 5%;
+    padding: 3%;
     margin-top: 2rem;
     border: 1px solid var(--nav-bg-color);
     border-radius: 20px;
@@ -771,7 +772,14 @@ textarea {
     padding: 5px;
 }
 #submit {
+    transition: all 1s ease 0s;
     padding: 5px;
+}
+#submit:hover {
+    background-color: var(--nav-bg-color);
+    border: 2px solid;
+    border-color: #fff;
+    color: #fff;
 }
 @media (max-width: 425px) {
     .footer-container {
