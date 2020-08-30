@@ -5,25 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotimi's Portfolio || Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/preloader.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body id="index">
+    <!--Pre Loader-->
+    <div class="loader-holder">
+        <!-- loader -->
+        <div class="wrap">
+            <div class="loading">
+              <div class="bounceball"></div>
+              <div class="text">NOW LOADING</div>
+            </div>
+          </div>
+      </div>
+  
     <!--Header and Navigation-->
-    <header class="header">
-        <a href=""><img class="logo" src="https://res.cloudinary.com/rolteame/image/upload/v1598293115/myportfolio%20assets/logo_tatugn.png" alt=""></a>
-        <nav class="navigation">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <a href="#contact"><button class="btn-contact">Contact</button></a>
-            </ul> 
-                  
-        </nav>
-    </header>
+    <!-- navbar  start  -->
+    <nav class="navbar">
+        <!-- hamburger -->
+        <div class="nav-align container">
+          <a href="#"><img class="logo" src="https://res.cloudinary.com/rolteame/image/upload/v1598293115/myportfolio%20assets/logo_tatugn.png" alt=""></a>
+          <!-- navbar content -->
+          <div class="nav-content">
+            <!-- nav-list  -->
+            <button
+              class="hamburger hamburger--collapse"
+              aria-label="Toggle navigation"
+              type="button"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"> </span>
+              </span>
+            </button>
+            <div class="navbar-collapse">
+              <ul class="nav-list">
+                <!-- nav items -->
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Moments</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     <a href="#index"><img class="back-up" src="https://img.icons8.com/dotty/80/000000/send-letter.png"/></a>
     <!--Main body container-->
     <main>
+        <!--Home section-->
         <section class="profile-intro">
             <div>
                 <div class="intro-header">
@@ -52,25 +83,39 @@
                 </div>
             </div>
         </section>
+        <!--Moments-->
+            <section class="moments">
+                <h2>My Moments</h2>
+                <div class="picture-grid">
+                    <div class="picture-1"></div>
+                    <div class="picture-2"></div>
+                    <div class="picture-3"></div>
+                    <div class="picture-4"></div>
+                    <div class="picture-5"></div>
+                    <div class="picture-6"></div>
+                </div>
+                <p>TiideLab Fellowship Cohort 2</p>
+            </section>
         <!--About Me Section-->
         <section class="about" id="about">
             <h2 class="about-heading">About Me</h2>
             <div class="about-wrapper">
                 <div class="about-section">
                     <div class="about-text">
-                        <p>I am a Frontend web developer with a well balanced and fundamental understanding of the technologies used in designing the web pages. also atech entusiast who loves gadgets and how it can help make life easier.</p>
+                        <p>I am a Frontend web developer with a well balanced and fundamental understanding of the technologies used in designing the web pages. i'M also atech entusiast who loves gadgets and how it can help make life easier.</p>
                         <p>Ready to work on any projects you might have.</p>
                         <a href="https://res.cloudinary.com/rolteame/image/upload/v1597842201/AdebiyiRotimiResume_adjia9.pdf" target="_blank"><button class="btn-resume">View Resume</button></a>
                     </div>
+                    <h2>Clients Testimonies</h2>
                     <div class="about-testimony">
-                        <h2>Clients Testimonies</h2>
-                        <div class="testimony-card">
+                        
+                        <div class="testimony-card card-1">
                             <img class="testimony-img" src="https://res.cloudinary.com/rolteame/image/upload/v1598404315/myportfolio%20assets/tes-img-1_vfode7.jpg" alt="testimonials image">
                             <h3>WIlliam Right</h3>
                             <h5>Product Engineer</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque ab saepe hic unde adipisci asperiores aspernatur perspiciatis aliquid natus.</p>
                         </div>
-                        <div class="testimony-card">
+                        <div class="testimony-card card-2">
                             <img class="testimony-img" src="https://res.cloudinary.com/rolteame/image/upload/v1598404313/myportfolio%20assets/bigstock-Closeup-portrait-of-a-happy-yo-29559188_lhzoqc.jpg" alt="testimonials image">
                             <h3>Danniel Stevens</h3>
                             <h5>UI/UX Designer</h5>
@@ -78,16 +123,9 @@
                         </div>
                         <div class="testimony-card">
                             
-                            <img class="testimony-img" src="https://res.cloudinary.com/rolteame/image/upload/v1598404314/myportfolio%20assets/images_gjz2ct.jpg">
+                            <img class="testimony-img card-3" src="https://res.cloudinary.com/rolteame/image/upload/v1598404314/myportfolio%20assets/images_gjz2ct.jpg">
                             <h3>Samuel Francis</h3>
                             <h5>UI/UX Designer</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque ab saepe hic unde adipisci asperiores aspernatur perspiciatis aliquid natus.</p>
-                        </div>
-                        <div class="testimony-card">
-                            
-                            <img class="testimony-img" src="https://res.cloudinary.com/rolteame/image/upload/v1598406258/myportfolio%20assets/download_dq6mrn.jpg">
-                            <h3>Jonathan Samson</h3>
-                            <h5>CEO</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque ab saepe hic unde adipisci asperiores aspernatur perspiciatis aliquid natus.</p>
                         </div>
                     </div>
@@ -97,23 +135,24 @@
         <section id="projects">
             <div class="projects-section">
                 <h2>Projects</h2>
+                <p>This are some of the projects i've worked on.</p>
                 <div class="projects-wrapper">
                     <div class="projects-card">
-                        <video class="projects-preview" src="https://res.cloudinary.com/rolteame/video/upload/v1598292984/myportfolio%20assets/Quick_Tip_-_Brave_8_24_2020_7_13_06_PM_lyf3o9.mp4" loop autoplay preload="auto"></video>
+                        <img class="projects-preview" src="https://res.cloudinary.com/rolteame/video/upload/v1598292984/myportfolio%20assets/Quick_Tip_-_Brave_8_24_2020_7_13_06_PM_lyf3o9.gif" alt="Quick Tip app ">
                         <div class="card-text">                       
                             <p>This is a simple tip calculator for restaurants and eateries.</p>
                             <a href="https://quicktipcalculator.vercel.app/" target="_blank"><button class="projects-visit">Visit</button></a>
                         </div>
                     </div>
                     <div class="projects-card">
-                        <video class="projects-preview" src="https://res.cloudinary.com/rolteame/video/upload/v1598293021/myportfolio%20assets/Scheduler_-_Brave_8_24_2020_7_11_40_PM_ua76bw.mp4" loop autoplay preload="auto"></video>
+                        <img class="projects-preview" src="https://res.cloudinary.com/rolteame/video/upload/v1598293021/myportfolio%20assets/Scheduler_-_Brave_8_24_2020_7_11_40_PM_ua76bw.gif" alt="Developer Food Schedule app">
                         <div class="card-text">
                             <p>Feeding time table so developers can manage their eating habits.</p>
                             <a href="https://foodschedule-psi.vercel.app/" target="_blank"><button class="projects-visit">Visit</button></a>
                         </div>
                     </div>
                     <div class="projects-card">
-                        <video class="projects-preview" src="https://res.cloudinary.com/rolteame/video/upload/v1598293005/myportfolio%20assets/Running_Tracker_-_Brave_8_24_2020_7_10_50_PM_hbswwa.mp4" loop autoplay preload="auto"></video>
+                        <img class="projects-preview" src="https://res.cloudinary.com/rolteame/video/upload/v1598293005/myportfolio%20assets/Running_Tracker_-_Brave_8_24_2020_7_10_50_PM_hbswwa.gif" alt="Running Miles Tracker app">
                         <div class="card-text">
                             <p>Help create a running goal and helps keep motivated</p>
                             <a href="https://runningtracker.vercel.app" target="_blank"><button class="projects-visit">Visit</button></a>
@@ -169,4 +208,8 @@
             </div>
         </section>
     </footer>
+
+
+    <script src="./js/scripts.js"></script>
 </html> 
+
