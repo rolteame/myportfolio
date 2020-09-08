@@ -20,7 +20,7 @@
 /*implementing smooth scroll and setting design width and height*/
 html {
     scroll-behavior: smooth;
-    max-width: 1440px;
+    
     height: 100vh;
     margin: 0 auto;
     background: darkgray;
