@@ -145,8 +145,8 @@ html {
     transition: all ease-in 300ms;
   }
   .navbar .logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-left: 0.3rem;
   }
   .navbar a {
@@ -159,7 +159,7 @@ html {
   }
   
   .navbar .nav-link {
-    transition: all 0.5s ease 0s;
+    transition: all 1s ease 0s;
     border-radius: 5px;
     padding: 1rem;
     text-decoration: none;
@@ -167,7 +167,7 @@ html {
   
   .navbar .nav-link:hover {
     border: 1px solid #fff;
-    
+    transition: all 1s ease 0s;
   }
   
   .navbar .nav-link:active,
@@ -239,7 +239,7 @@ html {
     border-radius: 50%; 
 }
 .profile-intro h1 {
-    font-size: 30px;
+    font-size: 35px;
 }
 .profile-intro h3 {
     font-size: 20px;
